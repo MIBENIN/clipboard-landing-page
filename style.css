@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+:root{
+    --Strong_Cyan: hsl(171, 66%, 44%);
+    --Light_Blue: hsl(233, 100%, 69%);
+    --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+    --Grayish_Blue: hsl(201, 11%, 66%);
+    --white:#fff;
+    --fw_600:600;
+    --fw_400:400;
+}
+.page-container{
+        width:100%;
+        overflow:hidden;
+        background-image: url(./images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top 0 left 0;
+}
+.container{
+        width:80%;
+        margin:0 auto;
+}
+.wrapper{
+        width:100%;
+}
+.section{
+    padding:4.5em 0;
+}
+h1,h2,h3,h4{
+    color:var(--Dark_Grayish_Blue);
+    font-weight: var(--fw_600);
+}
+h1{ 
+    padding:1.3em 0 .5em;
+}
+p{
+    width:65%;
+    margin:0 auto;
+    color:var(--Grayish_Blue);
+    line-height: 1.5;
+    font-weight: var(--fw_400);
+}
+a{
+    color:var(--Drak_Grayish_Blue);
+    font-weight: var(--fw_400);
+}
+.btn{
+    margin-top: 2em;
+    padding:.8em 2.1em;
+    border-radius: 20em;
+    color:var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: var(--fw_600);
+}
+
+.ios-btn{
+    background-color:var(--Strong_Cyan);
+    margin-right: 1em;
+    box-shadow: 0 .3em hsl(171, 80%, 38%);
+}
+.ios-btn:hover{
+    box-shadow: 0 .3em .5em  hsl(171, 80%, 74%);
+}
+.mac-btn{
+    background-color:var(--Light_Blue);
+    box-shadow: 0 .3em hsl(233, 92%, 64%);
+}
+.mac-btn:hover{
+    box-shadow: 0 .3em .5em hsl(233, 93%, 78%);
+}
+h2{
+    font-weight: var(--fw_600);
+    padding-bottom: 1.3em;
+}
+.snippet-content-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:6em;
+    width:100vw;
+    margin:4em 0 0 -20%;    
+}
+h3{
+    text-align: left;
+}
+.snippet-content-image{
+    width:60rem;
+}
+.snippet-image{
+    width:100%;
+}
+.snippet-details-para{
+    padding:.6em 0 2em;
+    text-align: left;
+    width:100%; 
+}
+
+.access-image-section{
+    margin:4em auto 0;
+    width:44rem;
+}
+.access-image{
+    width:100%;   
+}
+
+.workflow-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+    flex-wrap: wrap;
+}
+.workflow-card1,.workflow-card2,.workflow-card3{
+    width:18rem;
+}
+.workflow-card-section h4{
+    margin-top:1.1em;
+}
+.workflow-card-section p{
+    width:100%;
+    margin-top:.9em;
+}
+
+.company-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4.5em;
+    flex-wrap: wrap;
+}
+.company-card{
+    width:7rem;
+}
+.company-card img{
+    width:100%;
+}
+.footer-section{
+    margin: 5em -20em 0 -20em;
+    padding:3em 20em 0 20em;
+    background-color: rgb(247, 245, 245);
+}
+.footer-section-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2em;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+
+.footer-logo{
+    width:3rem;
+}
+.footer-logo img{
+    width:100%;
+}
+
+.footer-links{
+    width:20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:2em;
+    flex-wrap: wrap; 
+}
+
+.footer-social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.5em;
+}
+
+.attribution a{
+    text-decoration: underline;
+    color:var(--Light_Blue);
+}
+a:hover{
+    color:var(--Strong_Cyan);
+}
+.social-icons:hover{
+    filter: var(--Strong_Cyan);
+}
+@media screen and (max-width:768px){
+    .page-container{
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: contain;
+    }
+    p{
+        width:100%;
+    }
+    .btn{
+        width:75%;
+    }
+    .ios-btn{
+        margin-right: 0;
+    }
+    .snippet-content-section{
+        width:100%;
+        flex-direction: column;
+        margin: 4em 0 0 0;
+    }
+    .snippet-details-para,h3{
+        text-align: center;
+    }
+    .access-image-section{
+        width:100%;
+    }
+    .company-card{
+        width:10rem;
+    }
+    .footer-section-details{
+        flex-direction: column;
+    }
+    .footer-links{
+    justify-content: center;
+    flex-direction: column;
+    }
+    .snippet-content-image{
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .btn{
+        width:100%;
+    }
+}
